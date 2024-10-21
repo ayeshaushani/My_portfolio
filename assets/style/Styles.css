@@ -244,3 +244,142 @@
         justify-content: space-between; /* Align items within each div */
         margin-bottom: 1vh; /* Add space between each item */
     }
+    /*====================================================projects=============================================================*/
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; /* Full viewport height */
+        background: #262525;
+        text-align: center;
+        padding: 50px 20px;
+        background-size: cover; /* Ensure the background covers the entire area */
+    }
+
+
+    .title > h2 {
+        color: #5DB9EE;
+        font-size: 4rem;
+        width: 50vw;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .box {
+        display: inline-block;
+        justify-content: center;
+         align-items: center;
+        min-height: auto;
+
+    }
+    #cards{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+       /* padding: 5vw 2vh 3vw 5vh;*/
+        margin-left: 10vw;
+        margin-bottom: 8vh;
+    }
+    .card {
+        height: 45vh;
+        width: 20vw;
+        padding: 20px 35px;
+        background: linear-gradient(60deg ,#262525 , #5DB9EE);
+        border-radius: 20px;
+        /*margin: 50px;*/
+       /* margin-left: 110px;
+        margin-top: 100px;*/
+        /*display: flex;
+        flex-direction: row;*/
+        overflow: hidden;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .card > i {
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        margin: 25px 0;
+        color: #17303d;
+    }
+
+    .card > h5 {
+        color: #FFFFFF;
+        font-size: 23px;
+        margin-bottom: 5vh;
+    }
+
+    .pra > p {
+        color: rgba(246, 247, 248, 0.94);
+        font-size: 14px;
+        justify-content: center;
+        text-align: center;
+        /*line-height: 27px;
+        margin-bottom: 25px;*/
+    }
+    .pra{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .card > .pra >a{
+        background:  #5DB9EE;
+        color: #262525;
+        text-decoration: none;
+        border: 2px solid #090909;
+        font-weight: bold;
+        padding: 5px 18px;
+        border-radius: 30px;
+        transition: 4s;
+        width: 6vw;
+
+    }
+   /* @media (max-width: 768px) {
+        .project {
+            padding: 30px 10px; !* Adjusted padding for mobile *!
+            min-height: auto; !* Allow it to adjust based on content *!
+        }
+
+        .title > h2 {
+            font-size: 2rem; !* Smaller title font size *!
+        }
+
+
+        #cards {
+            flex-direction: column; !* Stack cards vertically on mobile *!
+            align-items: center; !* Center cards *!
+            gap: 1rem; !* Space between cards *!
+            margin: 0; !* Remove margin for mobile *!
+            justify-content: center;
+        }
+
+        .card {
+            width: auto; !* Full width for mobile *!
+            max-width: none; !* Allow full width *!
+            padding: 15px; !* Adjust padding for smaller screens *!
+            gap: normal;
+        }
+        .card > .pra >a{
+            background:  #5DB9EE;
+            color: #262525;
+            text-decoration: none;
+            border: 2px solid #090909;
+            font-weight: bold;
+            !*padding: 12px 10px;*!
+            border-radius: 30px;
+            transition: 4s;
+            width: auto;
+
+        }
+        .pra{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: normal;
+        }
+    }*/
