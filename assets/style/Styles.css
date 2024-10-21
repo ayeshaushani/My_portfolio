@@ -67,3 +67,13 @@
         text-align: center; /* Center align text */
         padding: 20px;
     }
+    #home h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+        color: black;
+    }
+
+    #home h1 span{
+        color: white;
+    }
+
