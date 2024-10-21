@@ -481,7 +481,7 @@
     }
 
     .Card {
-        background: linear-gradient(50deg, #090909 , #5DB9EE);
+        background: linear-gradient(30deg, #090909 , #5DB9EE);
         border-radius: 5px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         margin: 20px 0;
@@ -496,9 +496,15 @@
         margin: 0 0 10px;
     }
 
-    .Card a {
-        color: #007BFF;
+    .Card a button{
+        color: #090909;
         text-decoration: none;
+        border: 2px solid #01090e;
+        background: rgba(18, 141, 222, 0.76);
+        width: auto;
+        height: auto;
+        border-radius: 5px;
+
     }
 
     .Card a:hover {
