@@ -87,4 +87,20 @@
         color: white;
         max-width: 600px; /* Limit width for better readability */
     }
+    .img-container {
+        position: relative; /* For positioning the border */
+        display: inline-block; /* Keep the image block-level */
+        border: 8px solid #0a97f6; /* Blue border */
+        border-radius: 50%; /* Circular border */
+        padding: 8px; /* Space between image and border */
+        background-color: #fff; /* White background inside border */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    .img {
+        width: 250px; /* Set a specific width for the image */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%; /* Rounded corners for the image */
+
+    }
 
