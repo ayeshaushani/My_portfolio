@@ -76,4 +76,9 @@
     #home h1 span{
         color: white;
     }
+    #home h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+        color: black;
+    }
 
