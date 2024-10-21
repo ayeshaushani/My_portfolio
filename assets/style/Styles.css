@@ -150,14 +150,14 @@
     }
 
 /*==============================================================about page styling=======================================================================*/
-   /* #about {
+    #about {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        height: 100vh; !* Full viewport height *!
+        height: 100vh; /* Full viewport height */
         background: #262525;
-        text-align: center; !* Center align text *!
+        text-align: center; /* Center align text */
         padding: 20px;
         gap: 3rem;
 
@@ -180,7 +180,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-       !* justify-content: space-around;*!
+       /* justify-content: space-around;*/
     }
 
     .about-text > h2 {
@@ -207,7 +207,7 @@
     .about-text > p {
         color: #FFFFFF;
         letter-spacing: 1px;
-       !* line-height: 28px;*!
+       /* line-height: 28px;*/
         font-size: 18px;
         margin-bottom: 12vh;
         text-align: justify;
@@ -231,17 +231,16 @@
     .main>#box {
         border: 5px solid #5DB9EE;
         width: 40vw;
-        height: auto; !* Allow height to adjust based on content *!
+        height: auto; /* Allow height to adjust based on content */
         border-radius: 20px;
         color: #BBBBBB;
         display: flex;
-        flex-direction: column; !* Stack children vertically *!
-        padding: 10px; !* Add some padding *!
+        flex-direction: column; /* Stack children vertically */
+        padding: 10px; /* Add some padding */
     }
 
     .main>#box>div {
         display: flex;
-        justify-content: space-between; !* Align items within each div *!
-        margin-bottom: 1vh; !* Add space between each item *!
+        justify-content: space-between; /* Align items within each div */
+        margin-bottom: 1vh; /* Add space between each item */
     }
-*/
