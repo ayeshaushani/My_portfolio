@@ -46,3 +46,13 @@
     .nav-links a:hover {
         color: #0e8fe7; /* Change color on hover */
     }
+    .hamburger {
+        display: none; /* Hide by default */
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+    }
+
+    #menuToggle {
+        display: none; /* Hide the checkbox */
+    }
