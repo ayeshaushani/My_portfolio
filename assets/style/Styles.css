@@ -118,4 +118,31 @@
     .social-links a:hover {
         color: #9dcef1; /* Change color on hover */
     }
+    /*++++++++++++++++++mobile size++++++++++++++++++++++++++++++*/
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none; /* Hide nav links by default */
+            flex-direction: column; /* Stack links vertically */
+            position: absolute; /* Position dropdown */
+            top: 60px; /* Below the navbar */
+            left: 0;
+            right: 0;
+            background-color: #333;
+            padding: 20px 0; /* Add padding for dropdown */
+        }
+
+        #menuToggle:checked ~ .nav-links {
+            display: flex; /* Show links when checked */
+        }
+
+        .nav-links li {
+            margin: 10px 0; /* Space between links */
+            text-align: center; /* Center align text */
+        }
+
+        .hamburger {
+            display: block; /* Show hamburger icon on mobile */
+        }
+    }
+
 
