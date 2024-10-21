@@ -343,7 +343,7 @@
         align-items: center;
        /* padding: 5vw 2vh 3vw 5vh;*/
         margin-left: 1vw;
-        margin-bottom: 8vh;
+        margin-bottom: 15vh;
     }
     .card {
         height: 45vh;
@@ -351,21 +351,22 @@
         padding: 20px 35px;
         background: linear-gradient(60deg ,#262525 , #5DB9EE);
         border-radius: 20px;
-        /*margin: 50px;*/
+        margin: auto;
       /*  margin-left: 2vw;*/
-      /*  margin-top: 100px;*/
+      /*  margin-top: 20vh;*/
         /*display: flex;
         flex-direction: row;*/
-        /*align-items: center;*/
+        align-items: center;
         justify-content: center;
         overflow: hidden;
         text-align: center;
         color: #FFFFFF;
 
+
     }
 
     .card > i {
-        font-size: 50px;
+        font-size: 2rem;
         display: block;
         text-align: center;
         margin: 25px 0;
@@ -374,23 +375,27 @@
 
     .card > h5 {
         color: #FFFFFF;
-        font-size: 23px;
+        font-size: 1rem;
         margin-bottom: 5vh;
+
+
     }
 
     .pra > p {
         color: rgba(246, 247, 248, 0.94);
-        font-size: 14px;
+        font-size: 0.8rem;
         justify-content: center;
         text-align: center;
-        /*line-height: 27px;
+        margin:-2vw 0 2vw 0;
+        line-height: 1rem;
+        /*
         margin-bottom: 25px;*/
     }
     .pra{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2vh;
+
     }
 
     .card > .pra >a{
@@ -403,6 +408,7 @@
         border-radius: 30px;
         transition: 4s;
         width: 10vw;
+        font-size: 0.7rem;
 
     }
     @media (max-width: 768px) {
