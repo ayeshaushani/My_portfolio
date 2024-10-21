@@ -98,6 +98,7 @@
         width: 20vw; /* Width in vw */
         height: 20vw; /* Height in vw */
         overflow: hidden; /* Prevent overflow */
+
     }
     .img {
         width: 100%; /* Full width of the container */
