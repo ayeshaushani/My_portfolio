@@ -26,3 +26,23 @@
     .logo span {
         color: #0a97f6;
     }
+    .nav-links {
+        list-style-type: none;
+        display: flex;
+        gap: 2rem; /* Space between links */
+        transition: all 0.3s ease;
+    }
+
+    .nav-links li {
+        list-style: none;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .nav-links a:hover {
+        color: #0e8fe7; /* Change color on hover */
+    }
