@@ -56,3 +56,14 @@
     #menuToggle {
         display: none; /* Hide the checkbox */
     }
+    /* Home Section Styling */
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Full viewport height */
+        background: linear-gradient(#000000, #3877FF);
+        text-align: center; /* Center align text */
+        padding: 20px;
+    }
