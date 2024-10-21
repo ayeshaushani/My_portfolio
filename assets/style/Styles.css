@@ -88,21 +88,25 @@
         max-width: 600px; /* Limit width for better readability */
     }
     .img-container {
-        position: relative; /* For positioning the border */
-        display: inline-block; /* Keep the image block-level */
-        border: 8px solid #0a97f6; /* Blue border */
+        position: relative;
+        display: inline-block;
+        border: 1vw solid #0a97f6; /* Border size using vw */
         border-radius: 50%; /* Circular border */
-        padding: 8px; /* Space between image and border */
-        background-color: #fff; /* White background inside border */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        padding: 1vw; /* Padding using vw */
+        background-color: #fff; /* White background */
+        box-shadow: 0 0.5vh 2vh rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        width: 20vw; /* Width in vw */
+        height: 20vw; /* Height in vw */
+        overflow: hidden; /* Prevent overflow */
     }
-
     .img {
-        width: 250px; /* Set a specific width for the image */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 50%; /* Rounded corners for the image */
-
+        width: 100%; /* Full width of the container */
+        height: 100%; /* Full height of the container */
+        object-fit: cover; /* Maintain aspect ratio and cover the area */
+        object-position: center 0%; /* Center the image */
+        border-radius: 50%; /* Circular image to match the container */
     }
+
     .social-links {
         display: flex;
         gap: 25px; /* Space between social icons */
