@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>AYESHA USHANI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px 20px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #0a97f6;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            gap: 2rem; /* Space between links */
+            transition: all 0.3s ease;
+        }
+
+        .nav-links li {
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            color: #0e8fe7; /* Change color on hover */
+        }
+
+        .hamburger {
+            display: none; /* Hide by default */
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+
+        #menuToggle {
+            display: none; /* Hide the checkbox */
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Hide nav links by default */
+                flex-direction: column; /* Stack links vertically */
+                position: absolute; /* Position dropdown */
+                top: 60px; /* Below the navbar */
+                left: 0;
+                right: 0;
+                background-color: #333;
+                padding: 20px 0; /* Add padding for dropdown */
+            }
+
+            #menuToggle:checked ~ .nav-links {
+                display: flex; /* Show links when checked */
+            }
+
+            .nav-links li {
+                margin: 10px 0; /* Space between links */
+                text-align: center; /* Center align text */
+            }
+
+            .hamburger {
+                display: block; /* Show hamburger icon on mobile */
+            }
+        }
+
+        /* Home Section Styling */
+        #home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full viewport height */
+            background: linear-gradient(#000000, #3877FF);
+            text-align: center; /* Center align text */
+            padding: 20px;
+        }
+
+        #home h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        #home h1 span{
+            color: white;
+        }
+
+        #home h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        #home p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: white;
+            max-width: 600px; /* Limit width for better readability */
+        }
+
+        .img-container {
+            position: relative; /* For positioning the border */
+            display: inline-block; /* Keep the image block-level */
+            border: 8px solid #0a97f6; /* Blue border */
+            border-radius: 50%; /* Circular border */
+            padding: 8px; /* Space between image and border */
+            background-color: #fff; /* White background inside border */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .img {
+            width: 250px; /* Set a specific width for the image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Rounded corners for the image */
+
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px; /* Space between social icons */
+        }
+
+        .social-links a {
+            color: #333; /* Icon color */
+            text-decoration: none;
+            font-size: 24px; /* Size of the icons */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        .social-links a:hover {
+            color: #0a97f6; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Ay<span>EsHA</span></div>
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" class="hamburger">&#9776;</label>
+    <ul class="nav-links">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Services</a></li>
+        <li><a href="#assignments">Assignment</a></li>
+        <li><a href="#educ">Education</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+    </ul>
+</nav>
+
+<!-- Home section -->
+<section id="home">
+    <div class="img-container">
+        <img class="img" src="assets/images/dp.jpeg" alt="A beautiful view"> <!-- Replace with your image URL -->
+    </div>
+    <h1>Hi! I am <span> Ayesha ushani</span></h1>
+    <h2>Web Developer</h2>
+    <p>I am a skilled web developer focused on creating responsive, user-friendly websites.
+        With a keen eye for design and strong coding abilities, I build efficient and
+        visually appealing digital solutions. My goal is to craft websites
+        that meet user needs and perform seamlessly across devices.</p>
+    <div class="social-links">
+        <a href="https://www.facebook.com/akisa.senari?sfnsn=wa&mibextid=RUbZ1f"> <i class="fa-brands fa-facebook"></i> </a>
+        <a href="https://www.linkedin.com/in/ayesha-ushani-310b64318"> <i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ayeshaushani"><i class="fa-brands fa-github"></i></a>
+        <a href="https://medium.com/?source=---two_column_layout_nav----------------------------------"> <i class="fa-brands fa-medium"></i> </a>
+    </div>
+</section>
+</body>
+</html>
