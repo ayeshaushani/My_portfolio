@@ -342,7 +342,7 @@
         gap: 2rem;
         align-items: center;
        /* padding: 5vw 2vh 3vw 5vh;*/
-        margin-left: 10vw;
+        margin-left: 1vw;
         margin-bottom: 8vh;
     }
     .card {
@@ -352,13 +352,16 @@
         background: linear-gradient(60deg ,#262525 , #5DB9EE);
         border-radius: 20px;
         /*margin: 50px;*/
-       /* margin-left: 110px;
-        margin-top: 100px;*/
+      /*  margin-left: 2vw;*/
+      /*  margin-top: 100px;*/
         /*display: flex;
         flex-direction: row;*/
+        /*align-items: center;*/
+        justify-content: center;
         overflow: hidden;
         text-align: center;
         color: #FFFFFF;
+
     }
 
     .card > i {
@@ -399,7 +402,7 @@
         padding: 5px 18px;
         border-radius: 30px;
         transition: 4s;
-        width: 6vw;
+        width: 10vw;
 
     }
     @media (max-width: 768px) {
@@ -419,6 +422,7 @@
             gap: 1rem; /* Space between cards */
             margin: 0; /* Remove margin for mobile */
             justify-content: center;
+            width: auto;
         }
 
         .card {
@@ -436,7 +440,7 @@
             /*padding: 12px 10px;*/
             border-radius: 30px;
             transition: 4s;
-            width: auto;
+            width: 40vw;
 
         }
         .pra{
