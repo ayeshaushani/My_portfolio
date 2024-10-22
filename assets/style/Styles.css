@@ -533,157 +533,6 @@
         padding: 50px 20px;
         background-size: cover; /* Ensure the background covers the entire area */
     }
-
-
-   /* Main {
-        max-width: 800px; !* Limit the width of the main content *!
-        margin: 0 auto; !* Center the main content *!
-    }
-
-    h2 {
-        font-size: 4em; !* Increase font size for headings *!
-        margin-bottom: 20px; !* Space below headings *!
-        color: #5DB9EE; !* Darker color for headings *!
-    }
-
-    #Edu>ul {
-        list-style-type: none; !* Remove default bullet points *!
-        padding: 0; !* Remove default padding *!
-        background: linear-gradient(#5DB9EE , #333333);
-        align-items: center;
-    }
-
-    #Edu> ul > li {
-        background: linear-gradient(50deg , #4da7e5 , #333333); !* White background for list items *!
-        border-radius: 5px; !* Rounded corners *!
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); !* Subtle shadow for depth *!
-        margin: 10px 0; !* Space between list items *!
-        padding: 15px; !* Padding inside list items *!
-        transition: transform 0.3s; !* Smooth hover effect *!
-        text-align: center;
-    }
-
-    #Edu> ul > li:hover {
-        transform: scale(1.02); !* Slightly scale up on hover *!
-    }
-
-    #Edu ul ul {
-        margin-top: 10px; !* Space above sub-lists *!
-        padding-left: 20px; !* Indent sub-lists *!
-        list-style-type: disc; !* Use bullet points for sub-lists *!
-    }
-
-    #Edu >ul ul > li {
-        background: #ebf2f8; !* Light background for sub-list items *!
-        margin: 5px 0; !* Space between sub-list items *!
-        padding: 10px; !* Padding inside sub-list items *!
-    }
-
-*/
-  /*  #educ-experience {
-        background: #f0f0f0; !* Light gray background for the section *!
-        padding: 50px 20px; !* Padding around the section *!
-        text-align: left; !* Align text to the left for a modern look *!
-    }
-
-    .container {
-        display: flex; !* Use flexbox to divide sections *!
-        justify-content: space-between; !* Space between education and experience *!
-        max-width: 1200px; !* Max width for better alignment *!
-        margin: 0 auto; !* Center the container *!
-    }
-
-    .education, .experience {
-        flex: 1; !* Equal width for both sections *!
-        margin: 10px; !* Margin around sections *!
-    }
-
-    h2 {
-        font-size: 2.5em; !* Larger font size for the main heading *!
-        margin-bottom: 20px; !* Space below headings *!
-        color: #333; !* Darker color for headings *!
-        border-bottom: 2px solid #007BFF; !* Underline with color *!
-        padding-bottom: 10px; !* Padding below the heading *!
-    }
-
-    h3 {
-        font-size: 1.8em; !* Font size for section titles *!
-        color: #007BFF; !* 555555FFBlue color for section titles *!
-        margin-top: 20px; !* Space above section titles *!
-    }
-
-    ul {
-        list-style-type: none; !* Remove default bullet points *!
-        padding: 0; !* Remove default padding *!
-    }
-
-    ul > li {
-        background: #fff; !* White background for list items *!
-        border-radius: 8px; !* More rounded corners *!
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); !* Deeper shadow for a modern feel *!
-        margin: 15px 0; !* Space between list items *!
-        padding: 20px; !* Padding inside list items *!
-        transition: transform 0.3s, box-shadow 0.3s; !* Smooth hover effect *!
-    }
-
-    ul > li:hover {
-        transform: translateY(-5px); !* Slight lift on hover *!
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); !* Deeper shadow on hover *!
-    }
-
-    ul ul {
-        margin-top: 10px; !* Space above sub-lists *!
-        padding-left: 20px; !* Indent sub-lists *!
-    }
-
-    ul ul > li {
-        background: #e7f3fe; !* Light blue background for sub-list items *!
-        border-radius: 5px; !* Rounded corners for sub-list items *!
-        margin: 5px 0; !* Space between sub-list items *!
-        padding: 10px; !* Padding inside sub-list items *!
-        position: relative; !* For positioning pseudo-elements *!
-    }
-
-    ul ul > li:before {
-        content: "►"; !* Custom bullet point *!
-        position: absolute; !* Position it absolutely *!
-        left: -20px; !* Adjust position *!
-        color: #007BFF; !* Color for the bullet *!
-        font-weight: bold; !* Make bullet bold *!
-    }
-
-    @media (max-width: 600px) {
-        h2 {
-            font-size: 2em; !* Adjust main heading size on smaller screens *!
-        }
-
-        h3 {
-            font-size: 1.5em; !* Adjust section title size *!
-        }
-
-        ul > li {
-            padding: 15px; !* Adjust padding for smaller screens *!
-        }
-    }
-    #educ-experience {
-        background: #f0f0f0; !* Light gray background for the section *!
-        padding: 50px 20px; !* Padding around the section *!
-        text-align: left; !* Align text to the left for a modern look *!
-    }
-
-    .container {
-        display: flex; !* Use flexbox to divide sections *!
-        justify-content: space-between; !* Space between education and experience *!
-        max-width: 1200px; !* Max width for better alignment *!
-        margin: 0 auto; !* Center the container *!
-    }
-
-
-*/
-   /* #educ {
-        padding: 20px;
-        background-color: #f9f9f9;
-    }*/
     #Edu>ul>li{
         font-size: 2rem;
         border-bottom: 1px solid #5DB9EE;
@@ -763,9 +612,145 @@
             color: #FFFFFF;
             font-family: "Bitstream Charter", cursive;
             font-size: 1rem;
-
         }
+    }
+    /*===================================================================skill==========================================================================*/
+   /* #skill{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; !* Full viewport height *!
+        background: #262525;
+        text-align: center;
+        padding: 50px 20px;
+        background-size: cover; !* Ensure the background covers the entire area *!
+    }
+    #skill>div>h2{
+        color: #5DB9EE;
+        font-size: 4rem;
+        width: 50vw;
+    }
+    #skill>div>p{
+        font-size: 1rem;
+        color: #8dbcee;
+    }
+    #skill>#SkillBox{
+         background: linear-gradient(#333333,deepskyblue);
+        height: 60vh;
+        width: 80vw;
+        padding: 20vh;
+    }
+    #SkillBox>.SkillBar{
+        background: linear-gradient(#262525,#FFFFFF);
+        height: auto;
+        width: 90%;
+        padding: 10px;
+      !* margin: auto;*!
+        border-radius: 20px;
+        line-height: 5px;
+       !* background: linear-gradient(#262525, #FFFFFF);*!
+        !*width: 90%;
+        padding: 10px;*!
+        margin: 10px auto; !* Adds a 10px gap between skill bars *!
+       !* border-radius: 20px;
+        line-height: 5px;*!
+    }
+    #SkillBox>.SkillBar>#Skill-CSS{
+        width: 70%;
+        height: auto;
+        background: crimson;
+    }
 
+*/#skill {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         min-height: 100vh; /* Full viewport height */
+         background: #262525;
+         text-align: center;
+         padding: 50px 20px;
+         background-size: cover; /* Ensure the background covers the entire area */
+     }
 
+    #skill > div > h2 {
+        color: #5DB9EE;
+        font-size: 4rem;
+        width: 50vw;
+    }
+
+    #skill > div > p {
+        font-size: 1rem;
+        color: #8dbcee;
+    }
+
+    #skill > #SkillBox>#tt {
+        background: linear-gradient(#333333, deepskyblue);
+        height: 60vh;
+        width: 80vw;
+        padding: 20vh;
+        display: flex;
+        flex-direction: column; /* Align skill bars vertically */
+        align-items: center; /* Center skill bars */
+    }
+
+    #SkillBox >#tt> .SkillBar {
+        background: linear-gradient(#262525, #FFFFFF);
+        width: 90%;
+        padding: 12px;
+        margin: 20px 0 -10px 0; /* Adds a 20px gap between skill bars */
+        border-radius: 20px;
+        display: flex; /* Use flexbox for skill area */
+        align-items: center; /* Center content vertically */
+        line-height: 10px;
 
     }
+
+
+    .Skill-Area {
+        flex: 1; /* Allows the skill area to take remaining space */
+        text-align: left; /* Aligns text to the left */
+    }
+
+    .PercentText {
+        position: absolute; /* Position the percentage text absolutely */
+        right: 10px; /* Position it to the right */
+        color: #32CD32; /* Change color to a different one, e.g., LimeGreen */
+        font-weight: bold; /* Makes the percentage text bold */
+        background-color: rgba(255, 255, 255, 0.3); /* Optional background for better visibility */
+        border-radius: 5px; /* Rounded corners for percentage text */
+        padding: 2px 5px; /* Padding around the percentage text */
+    }
+
+    #skill>#SkillBox>#tt>{
+        margin-top: 150px;
+        background: #090909;
+    }
+    #SkillBox#tt>.SkillBar>.skill-html {
+        background: crimson; /* Color for HTML */
+        height: 5px;
+        width: 80%;
+
+    }
+
+    .skill-css {
+        background-color: lightblue; /* Color for CSS */
+    }
+
+    .skill-jquery {
+        background-color: orange; /* Color for jQuery */
+    }
+
+    .skill-js {
+        background-color: yellow; /* Color for JavaScript */
+    }
+
+    .skill-java {
+        background-color: #FFA500; /* Color for JAVA */
+    }
+
+    .skill-sql {
+        background-color: lightgreen; /* Color for SQL */
+    }
+
