@@ -644,3 +644,12 @@
         transition: transform 0.2s;
         width: 50vw;
     }
+    .skill-card:hover {
+        transform: scale(1.05);
+    }
+
+    .skill-logo {
+        width: 50px; /* Adjust logo size */
+        height: auto;
+        margin-bottom: 10px;
+    }
