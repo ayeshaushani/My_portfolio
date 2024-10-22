@@ -65,23 +65,25 @@
         height: 100vh; /* Full viewport height */
         background: linear-gradient(#000000, #3877FF);
         text-align: center; /* Center align text */
-        padding: 10px;
-        margin: auto;
+        padding: 20px;
     }
+
     #home h1 {
         font-size: 36px;
-        margin-bottom: -10px;
+        margin-bottom: 15px;
         color: black;
     }
 
     #home h1 span{
         color: white;
     }
+
     #home h2 {
         font-size: 32px;
         margin-bottom: 15px;
         color: black;
     }
+
     #home p {
         font-size: 18px;
         margin-bottom: 20px;
@@ -701,7 +703,7 @@
         color: #5DB9EE;
         font-size: 4rem;
         width: 50vw;
-        margin:  auto;
+     /*   margin-left: 0;*/
         text-align: center;
     }
 
@@ -735,7 +737,7 @@
 
     h3 {
         font-size: 2rem;
-        color: #7a9fb7;
+        color: #5DB9EE;
     }
     #exp>ul>li{
         color: #FFFFFF;
@@ -745,4 +747,25 @@
     }
     #exp>ul>ul>li{
         color: #FFFFFF;
+    }
+    @media (max-width: 768px) {
+        h2{
+            font-size: 2rem;
+            margin-left: 12vw;
+
+        }
+        #Edu>ul>li{
+            font-size: 1.1rem;
+            border-bottom: 1px solid #5DB9EE;
+            line-height: 2rem;
+        }
+        #Edu>ul>ul>li{
+            color: #FFFFFF;
+            font-family: "Bitstream Charter", cursive;
+            font-size: 1rem;
+
+        }
+
+
+
     }
