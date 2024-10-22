@@ -627,3 +627,8 @@
         text-align: center;
         background-size: cover; /* Ensure the background covers the entire area */
     }
+    h2 {
+        color: #5DB9EE;
+        font-size: 4rem;
+        width: 50vw;
+    }
