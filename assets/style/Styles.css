@@ -615,142 +615,15 @@
         }
     }
     /*===================================================================skill==========================================================================*/
-   /* #skill{
+    #skills {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        min-height: 100vh; !* Full viewport height *!
+        min-height: 100vh; /* Full viewport height */
         background: #262525;
         text-align: center;
-        padding: 50px 20px;
-        background-size: cover; !* Ensure the background covers the entire area *!
+        background-size: cover; /* Ensure the background covers the entire area */
     }
-    #skill>div>h2{
-        color: #5DB9EE;
-        font-size: 4rem;
-        width: 50vw;
-    }
-    #skill>div>p{
-        font-size: 1rem;
-        color: #8dbcee;
-    }
-    #skill>#SkillBox{
-         background: linear-gradient(#333333,deepskyblue);
-        height: 60vh;
-        width: 80vw;
-        padding: 20vh;
-    }
-    #SkillBox>.SkillBar{
-        background: linear-gradient(#262525,#FFFFFF);
-        height: auto;
-        width: 90%;
-        padding: 10px;
-      !* margin: auto;*!
-        border-radius: 20px;
-        line-height: 5px;
-       !* background: linear-gradient(#262525, #FFFFFF);*!
-        !*width: 90%;
-        padding: 10px;*!
-        margin: 10px auto; !* Adds a 10px gap between skill bars *!
-       !* border-radius: 20px;
-        line-height: 5px;*!
-    }
-    #SkillBox>.SkillBar>#Skill-CSS{
-        width: 70%;
-        height: auto;
-        background: crimson;
-    }
-
-*/#skill {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-         min-height: 100vh; /* Full viewport height */
-         background: #262525;
-         text-align: center;
-         padding: 50px 20px;
-         background-size: cover; /* Ensure the background covers the entire area */
-     }
-
-    #skill > div > h2 {
-        color: #5DB9EE;
-        font-size: 4rem;
-        width: 50vw;
-    }
-
-    #skill > div > p {
-        font-size: 1rem;
-        color: #8dbcee;
-    }
-
-    #skill > #SkillBox>#tt {
-        background: linear-gradient(#333333, deepskyblue);
-        height: 60vh;
-        width: 80vw;
-        padding: 20vh;
-        display: flex;
-        flex-direction: column; /* Align skill bars vertically */
-        align-items: center; /* Center skill bars */
-    }
-
-    #SkillBox >#tt> .SkillBar {
-        background: linear-gradient(#262525, #FFFFFF);
-        width: 90%;
-        padding: 12px;
-        margin: 20px 0 -10px 0; /* Adds a 20px gap between skill bars */
-        border-radius: 20px;
-        display: flex; /* Use flexbox for skill area */
-        align-items: center; /* Center content vertically */
-        line-height: 10px;
-
-    }
-
-
-    .Skill-Area {
-        flex: 1; /* Allows the skill area to take remaining space */
-        text-align: left; /* Aligns text to the left */
-    }
-
-    .PercentText {
-        position: absolute; /* Position the percentage text absolutely */
-        right: 10px; /* Position it to the right */
-        color: #32CD32; /* Change color to a different one, e.g., LimeGreen */
-        font-weight: bold; /* Makes the percentage text bold */
-        background-color: rgba(255, 255, 255, 0.3); /* Optional background for better visibility */
-        border-radius: 5px; /* Rounded corners for percentage text */
-        padding: 2px 5px; /* Padding around the percentage text */
-    }
-
-    #skill>#SkillBox>#tt>{
-        margin-top: 150px;
-        background: #090909;
-    }
-    #SkillBox#tt>.SkillBar>.skill-html {
-        background: crimson; /* Color for HTML */
-        height: 5px;
-        width: 80%;
-
-    }
-
-    .skill-css {
-        background-color: lightblue; /* Color for CSS */
-    }
-
-    .skill-jquery {
-        background-color: orange; /* Color for jQuery */
-    }
-
-    .skill-js {
-        background-color: yellow; /* Color for JavaScript */
-    }
-
-    .skill-java {
-        background-color: #FFA500; /* Color for JAVA */
-    }
-
-    .skill-sql {
-        background-color: lightgreen; /* Color for SQL */
-    }
-
