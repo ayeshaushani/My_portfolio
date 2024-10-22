@@ -669,3 +669,8 @@
             max-width: 300px; /* Optional: maximum width */
         }
     }
+    @media (max-width: 1366px) and (min-width: 1024px) {
+        .skills-container>.skill-card {
+            flex: 1 1 calc(45% - 30px); /* 2 boxes per row */
+        }
+    }
