@@ -65,11 +65,12 @@
         height: 100vh; /* Full viewport height */
         background: linear-gradient(#000000, #3877FF);
         text-align: center; /* Center align text */
-        padding: 20px;
+        padding: 10px;
+        margin: auto;
     }
     #home h1 {
         font-size: 36px;
-        margin-bottom: 15px;
+        margin-bottom: -10px;
         color: black;
     }
 
@@ -90,9 +91,9 @@
     .img-container {
         position: relative;
         display: inline-block;
-        border: 1vw solid #0a97f6; /* Border size using vw */
+        border: 0.8vw solid #0a97f6; /* Border size using vw */
         border-radius: 50%; /* Circular border */
-        padding: 1vw; /* Padding using vw */
+        padding: 0.8vw; /* Padding using vw */
         background-color: #fff; /* White background */
         box-shadow: 0 0.5vh 2vh rgba(0, 0, 0, 0.1); /* Subtle shadow */
         width: 20vw; /* Width in vw */
@@ -165,9 +166,10 @@
     }
 
     #about > img {
-        height: 60vh;
-        width: 25vw;
+        height: 65vh;
+        width: 20vw;
         margin-left: 15vw;
+        border: 3px solid #0a97f6;
     }
 
     .about-text {
@@ -511,9 +513,236 @@
         text-decoration: underline;
     }
 
-   /* footer {
+    footer {
         text-align: center;
         padding: 10px 0;
         background: #333;
         color: #fff;
+    }
+    /*==========================================================EDUCATION=============================================================*/
+    #educ {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; /* Full viewport height */
+        background: #262525;
+        text-align: center;
+        padding: 50px 20px;
+        background-size: cover; /* Ensure the background covers the entire area */
+    }
+
+
+   /* Main {
+        max-width: 800px; !* Limit the width of the main content *!
+        margin: 0 auto; !* Center the main content *!
+    }
+
+    h2 {
+        font-size: 4em; !* Increase font size for headings *!
+        margin-bottom: 20px; !* Space below headings *!
+        color: #5DB9EE; !* Darker color for headings *!
+    }
+
+    #Edu>ul {
+        list-style-type: none; !* Remove default bullet points *!
+        padding: 0; !* Remove default padding *!
+        background: linear-gradient(#5DB9EE , #333333);
+        align-items: center;
+    }
+
+    #Edu> ul > li {
+        background: linear-gradient(50deg , #4da7e5 , #333333); !* White background for list items *!
+        border-radius: 5px; !* Rounded corners *!
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); !* Subtle shadow for depth *!
+        margin: 10px 0; !* Space between list items *!
+        padding: 15px; !* Padding inside list items *!
+        transition: transform 0.3s; !* Smooth hover effect *!
+        text-align: center;
+    }
+
+    #Edu> ul > li:hover {
+        transform: scale(1.02); !* Slightly scale up on hover *!
+    }
+
+    #Edu ul ul {
+        margin-top: 10px; !* Space above sub-lists *!
+        padding-left: 20px; !* Indent sub-lists *!
+        list-style-type: disc; !* Use bullet points for sub-lists *!
+    }
+
+    #Edu >ul ul > li {
+        background: #ebf2f8; !* Light background for sub-list items *!
+        margin: 5px 0; !* Space between sub-list items *!
+        padding: 10px; !* Padding inside sub-list items *!
+    }
+
+*/
+  /*  #educ-experience {
+        background: #f0f0f0; !* Light gray background for the section *!
+        padding: 50px 20px; !* Padding around the section *!
+        text-align: left; !* Align text to the left for a modern look *!
+    }
+
+    .container {
+        display: flex; !* Use flexbox to divide sections *!
+        justify-content: space-between; !* Space between education and experience *!
+        max-width: 1200px; !* Max width for better alignment *!
+        margin: 0 auto; !* Center the container *!
+    }
+
+    .education, .experience {
+        flex: 1; !* Equal width for both sections *!
+        margin: 10px; !* Margin around sections *!
+    }
+
+    h2 {
+        font-size: 2.5em; !* Larger font size for the main heading *!
+        margin-bottom: 20px; !* Space below headings *!
+        color: #333; !* Darker color for headings *!
+        border-bottom: 2px solid #007BFF; !* Underline with color *!
+        padding-bottom: 10px; !* Padding below the heading *!
+    }
+
+    h3 {
+        font-size: 1.8em; !* Font size for section titles *!
+        color: #007BFF; !* 555555FFBlue color for section titles *!
+        margin-top: 20px; !* Space above section titles *!
+    }
+
+    ul {
+        list-style-type: none; !* Remove default bullet points *!
+        padding: 0; !* Remove default padding *!
+    }
+
+    ul > li {
+        background: #fff; !* White background for list items *!
+        border-radius: 8px; !* More rounded corners *!
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); !* Deeper shadow for a modern feel *!
+        margin: 15px 0; !* Space between list items *!
+        padding: 20px; !* Padding inside list items *!
+        transition: transform 0.3s, box-shadow 0.3s; !* Smooth hover effect *!
+    }
+
+    ul > li:hover {
+        transform: translateY(-5px); !* Slight lift on hover *!
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); !* Deeper shadow on hover *!
+    }
+
+    ul ul {
+        margin-top: 10px; !* Space above sub-lists *!
+        padding-left: 20px; !* Indent sub-lists *!
+    }
+
+    ul ul > li {
+        background: #e7f3fe; !* Light blue background for sub-list items *!
+        border-radius: 5px; !* Rounded corners for sub-list items *!
+        margin: 5px 0; !* Space between sub-list items *!
+        padding: 10px; !* Padding inside sub-list items *!
+        position: relative; !* For positioning pseudo-elements *!
+    }
+
+    ul ul > li:before {
+        content: "►"; !* Custom bullet point *!
+        position: absolute; !* Position it absolutely *!
+        left: -20px; !* Adjust position *!
+        color: #007BFF; !* Color for the bullet *!
+        font-weight: bold; !* Make bullet bold *!
+    }
+
+    @media (max-width: 600px) {
+        h2 {
+            font-size: 2em; !* Adjust main heading size on smaller screens *!
+        }
+
+        h3 {
+            font-size: 1.5em; !* Adjust section title size *!
+        }
+
+        ul > li {
+            padding: 15px; !* Adjust padding for smaller screens *!
+        }
+    }
+    #educ-experience {
+        background: #f0f0f0; !* Light gray background for the section *!
+        padding: 50px 20px; !* Padding around the section *!
+        text-align: left; !* Align text to the left for a modern look *!
+    }
+
+    .container {
+        display: flex; !* Use flexbox to divide sections *!
+        justify-content: space-between; !* Space between education and experience *!
+        max-width: 1200px; !* Max width for better alignment *!
+        margin: 0 auto; !* Center the container *!
+    }
+
+
+*/
+   /* #educ {
+        padding: 20px;
+        background-color: #f9f9f9;
     }*/
+    #Edu>ul>li{
+        font-size: 2rem;
+        border-bottom: 1px solid #5DB9EE;
+        line-height: 4rem;
+
+    }
+    #Edu>ul>ul>li{
+        font-size: 1.2rem;
+        color: #FFFFFF;
+    }
+    #Edu>ul>ul>ul>li{
+        color: #FFFFFF;
+        font-family: "Bitstream Charter", cursive;
+    }
+
+    h2 {
+        color: #5DB9EE;
+        font-size: 4rem;
+        width: 50vw;
+        margin:  auto;
+        text-align: center;
+    }
+
+    #sec {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #Edu, #exp {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    hr {
+        border: 1px solid #ccc; /* Line color */
+        margin: 20px 0; /* Space around the line */
+    }
+
+    b {
+        color: #8dbcee; /* Color for college names */
+    }
+
+    h3 {
+        font-size: 2rem;
+        color: #7a9fb7;
+    }
+    #exp>ul>li{
+        color: #FFFFFF;
+    }
+    #exp>h3{
+        border-bottom: 1px solid aqua;
+    }
+    #exp>ul>ul>li{
+        color: #FFFFFF;
+    }
