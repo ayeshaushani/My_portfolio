@@ -632,3 +632,15 @@
         font-size: 4rem;
         width: 50vw;
     }
+    .skill-card {
+        background: linear-gradient(50deg,#5DB9EE,#000000);
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 15px;
+        padding: 20px;
+        text-align: center;
+        flex: 0 1 calc(33.33% - 30px); /* 3 boxes per row */
+        transition: transform 0.2s;
+        width: 50vw;
+    }
