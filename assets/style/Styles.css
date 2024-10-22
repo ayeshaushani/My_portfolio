@@ -663,3 +663,9 @@
             flex: 1 1 100%; /* 1 box per row on extra small screens */
         }
     }
+    @media (max-width: 1024px) and (min-width: 768px) {
+        .skill-card {
+            flex: 1 1 300px; /* Fixed width for tablet screens */
+            max-width: 300px; /* Optional: maximum width */
+        }
+    }
