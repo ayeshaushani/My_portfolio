@@ -658,3 +658,8 @@
             flex: 1 1 calc(50% - 30px); /* 2 boxes per row on smaller screens */
         }
     }
+    @media (max-width: 480px) {
+        .skill-card {
+            flex: 1 1 100%; /* 1 box per row on extra small screens */
+        }
+    }
