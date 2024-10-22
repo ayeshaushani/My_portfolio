@@ -548,7 +548,7 @@
         font-family: "Bitstream Charter", cursive;
     }
 
-    h2 {
+    #Edu>h2 {
         color: #5DB9EE;
         font-size: 4rem;
         width: 50vw;
@@ -598,7 +598,7 @@
         color: #FFFFFF;
     }
     @media (max-width: 768px) {
-        h2{
+        #Edu>h2{
             font-size: 2rem;
             margin-left: 12vw;
 
@@ -627,7 +627,7 @@
         text-align: center;
         background-size: cover; /* Ensure the background covers the entire area */
     }
-    h2 {
+    #skills>>h2 {
         color: #5DB9EE;
         font-size: 4rem;
         width: 50vw;
@@ -656,11 +656,17 @@
     @media (max-width: 768px) {
         .skill-card {
             flex: 1 1 calc(50% - 30px); /* 2 boxes per row on smaller screens */
+
+        }
+        .skill-card>h2{
+            font-size: 1.5rem;
+            align-items: center;
         }
     }
     @media (max-width: 480px) {
         .skill-card {
             flex: 1 1 100%; /* 1 box per row on extra small screens */
+
         }
     }
     @media (max-width: 1024px) and (min-width: 768px) {
