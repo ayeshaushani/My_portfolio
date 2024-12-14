@@ -4,156 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <style>
-        /* Global Styles */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
 
-        body {
-            background: linear-gradient(45deg, #0a0a0a,#3a4452);
-            font-size: 16px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 30px;
-            color: #333;
-        }
-
-       #contact-container {
-            width: 100%;
-            max-width: 800px;
-            background: linear-gradient(45deg, #2b2a2a, #526a8a);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 5px;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-            transition: border-color 0.3s;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            border-color: #007BFF;
-            outline: none;
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            height: 150px;
-        }
-
-        .submit-btn {
-            width: 100%;
-            padding: 15px;
-            font-size: 18px;
-            color: white;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .submit-btn:hover {
-            background-color: #0056b3;
-        }
-
-        /* Media Queries */
-        @media (max-width: 768px) {
-            #contact-container {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 30px;
-            }
-
-            .form-group input,
-            .form-group textarea {
-                font-size: 14px;
-                padding: 10px;
-            }
-
-            .submit-btn {
-                font-size: 16px;
-                padding: 12px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            #contact-container {
-                padding: 15px;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            .form-group input,
-            .form-group textarea {
-                font-size: 12px;
-                padding: 8px;
-            }
-
-            .submit-btn {
-                font-size: 14px;
-                padding: 10px;
-            }
-        }
-    </style>
 </head>
+<style>
+    /* General Footer Styling */
+    #footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        flex: 1;
+        margin: 20px;
+        min-width: 200px;
+    }
+
+    .footer-section h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #0a97f6;
+    }
+
+    .footer-section p, .footer-section a {
+        font-size: 14px;
+        color: #bbb;
+        text-decoration: none;
+        line-height: 1.8;
+    }
+
+    .footer-section a:hover {
+        color: #0a97f6;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-section ul li {
+        margin: 8px 0;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        background-color: #222;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .footer-bottom p {
+        margin: 0;
+    }
+
+    /* Social Media Icons */
+    .social-links {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+        color: #bbb;
+        transition: color 0.3s ease;
+    }
+
+    .social-icon:hover {
+        color: #0a97f6;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-section {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .footer-section h3 {
+            font-size: 18px;
+        }
+
+        .footer-section p, .footer-section a {
+            font-size: 12px;
+        }
+
+        .social-links {
+            gap: 10px;
+        }
+    }
+
+</style>
 <body>
-<section id="contact-container">
-    <h1>Contact Us</h1>
-    <form>
-        <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+<footer id="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:akisasenari@gmail.com">example@example.com</a></p>
+            <p>Phone: <a href="tel:+94770825835">+1 (234) 567-890</a></p>
         </div>
 
-        <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
 
-        <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
         </div>
+    </div>
 
-        <button type="submit" class="submit-btn">Send Message</button>
-    </form>
-</section>
+    <div class="footer-bottom">
+        <p>&copy; Ayesha Ushani. All rights reserved.</p>
+    </div>
+</footer>
+
 
 </body>
 </html>
