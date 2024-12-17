@@ -523,6 +523,7 @@
         margin: 20px 0;
         padding: 15px;
         box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+        width: 20vw;
     }
 
     .Card h3 {
@@ -531,17 +532,22 @@
 
     .Card p {
         margin: 0 0 10px;
+        color: white;
     }
 
     .Card a button{
         color: #090909;
         text-decoration: none;
-        border: 2px solid #01090e;
-        background: rgba(18, 141, 222, 0.76);
+       /* border: 1px solid #01090e;*/
+        background:transparent;
         width: auto;
         height: auto;
-        border-radius: 5px;
+        border-radius: 2px;
 
+    }
+    .Card a{
+        font-size: 1.5rem;
+        color: #2b2a2a;
     }
 
     .Card a:hover {
@@ -554,6 +560,60 @@
         background: #333;
         color: #fff;
     }
+    /* For small mobile screens (up to 360px) */
+    @media (max-width: 360px) {
+        .Card {
+            width: 90vw; /* Cards take up almost the full width on small screens */
+            padding: 12px; /* Reduce padding for small screens */
+        }
+
+        #grid {
+            justify-content: center; /* Center the cards */
+        }
+        .Card> h3{
+            font-size: 1.5rem;
+        }
+        .Card>p{
+            font-size: 1rem;
+        }
+    }
+
+    /* For medium mobile screens (up to 480px) */
+    @media (max-width: 480px) {
+        .Card {
+            width: 85vw; /* Cards take up most of the width but still leave some margin */
+            padding: 14px; /* Slightly larger padding for better spacing */
+        }
+
+        #grid {
+            justify-content: center; /* Center the cards */
+        }
+        .Card>h3{
+            font-size: 1.5rem;
+        }
+        .Card>p{
+            font-size: 1rem;
+        }
+    }
+
+    /* For larger mobile screens (up to 768px) */
+    @media (max-width: 768px) {
+        .Card {
+            width: 45vw; /* Cards take up 45% of the viewport width */
+            padding: 16px; /* Larger padding for a comfortable layout */
+        }
+
+        #grid {
+            justify-content: space-around; /* Distribute cards evenly with space around them */
+        }
+        .Card>h3{
+            font-size: 1.5rem;
+        }
+        .Card>p{
+            font-size: 1rem;
+        }
+    }
+
     /*==========================================================EDUCATION=============================================================*/
     #educ {
         display: flex;
